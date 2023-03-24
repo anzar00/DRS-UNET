@@ -1,0 +1,126 @@
+/* styles.scss */
+
+/* Set the margin and padding to 0 for the entire page */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the height of the header and footer */
+header,
+footer {
+  height: 60px;
+}
+
+/* Add a gradient background to the header */
+mat-toolbar {
+  background: linear-gradient(to right, #2e86c1, #3498db);
+}
+
+/* Style the navigation bar and menu button */
+.nav-title {
+  flex: 1 1 auto;
+  margin-left: 16px;
+}
+
+.nav-menu-button {
+  display: none;
+  margin-right: 16px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu-button {
+    display: block;
+  }
+}
+
+/* Style the banner section */
+.banner {
+  height: 600px;
+//   background-image: url("assets/banner.jpg");
+  background-color: #68C7FF;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: #004B84;
+  font: Poppins, sans-serif;
+}
+
+.banner-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.banner-subtitle {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.banner-button {
+  font-size: 18px;
+  background-color: #156CAD;
+  color: #fff;
+}
+
+/* Style the section headings and text */
+.section {
+  padding: 48px 16px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+
+/* Style the feature list */
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-list li {
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li mat-icon {
+  margin-right: 8px;
+  color: #2e86c1;
+}
+
+/* Style the footer */
+footer {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-right: 16px;
+}
+
+.footer-content a {
+  margin-left: 16px;
+}
